@@ -1,25 +1,25 @@
 <template>
-<div>
-    <nuxt-link :to="id">
-      <article class="post-preview">
-        <div
-        :style="{backgroundImage:'url('+thumbnailImage+')'}"
-        class="post-preview-thumbnail">
-        </div>
+    <div>
+        <nuxt-link :to="id">
+        <article class="post-preview">
+            <div :style="{backgroundImage:'url('+thumbnailImage+')'}" class="post-preview-thumbnail">
 
-        <div class="post-preview-content">
-          <h1>{{title}}</h1>
-          <p>{{excerpt}}</p>
-        </div>
-      </article>
-    </nuxt-link>
-</div>
+            </div>
+
+            <div class="post-preview-content">
+                <h1>{{title}}</h1>
+                <p>{{excerpt}}</p>
+            </div>
+            
+        </article>
+        </nuxt-link>
+    </div>
      
 </template>
 
 <script>
     export default{
-        props:{
+        props: {
             title: {
                 type: String,
                 required: true
@@ -32,7 +32,7 @@
                 type: String,
                 required: true
             },
-            id: {
+            id:{
                 type: String,
                 required: true
             }
