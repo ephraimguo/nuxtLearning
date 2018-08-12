@@ -1,9 +1,9 @@
 <template>
-    <div>
         <nuxt-link :to="id">
-        <article class="post-preview">
-            <div :style="{backgroundImage:'url('+thumbnailImage+')'}" class="post-preview-thumbnail">
-
+        <div class="post-preview">
+            <div 
+            :style="{backgroundImage:'url('+thumbnailImage+')'}" 
+            class="post-preview-thumbnail">
             </div>
 
             <div class="post-preview-content">
@@ -11,9 +11,8 @@
                 <p>{{excerpt}}</p>
             </div>
             
-        </article>
+        </div>
         </nuxt-link>
-    </div>
      
 </template>
 
@@ -46,10 +45,11 @@ a{
     color: black;
 }
 .post-preview{
+    box-shadow: 5px 5px 15px 5px #888;
     border-radius: 5px;
-    box-shadow: 1px, 1px, 5px, 1px rgba(0,0,0,0.5);
+    border: 1px solid black;
     width: 90%;
-    margin: auto;
+    margin: 2rem;
     height: 20rem;
 }
 
@@ -66,8 +66,9 @@ a{
 }
 
 @media(min-width: 35rem){
-    .post-preview{width: 25rem; margin:1rem;}
-
+    .post-preview{
+        width: 25rem; 
+        }
 }
 
 </style>

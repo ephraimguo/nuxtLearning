@@ -33,7 +33,7 @@ body{
 .main-content{
   margin: 4.5rem;
   padding: 1.2rem;
-  border: solid 1px #271941;
+  /* border: solid 1px #271941; */
 }
 </style>
 

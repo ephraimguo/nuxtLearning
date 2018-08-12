@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section id="posts">
     <PostPreview v-for="post in posts" 
     :key="post.id"
     :title="post.title"
@@ -40,6 +40,19 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+#posts{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media(min-width:35rem){
+  #posts{
+    align-items: center;
+    flex-direction: row;
+  }
+}
 </style>
